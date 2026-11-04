@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Bitter', Georgia, serif;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Easy Mode for Older Adults */
+  html.easy-mode {
+    font-size: 20px;
+  }
+
+  html.easy-mode button,
+  html.easy-mode input,
+  html.easy-mode select,
+  html.easy-mode textarea {
+    min-height: 52px;
+    font-size: 1.1rem;
+  }
+
+  /* High Contrast Mode */
+  html.high-contrast {
+    filter: contrast(115%);
+  }
+
+  html.high-contrast body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+  }
+
+  html.high-contrast .card-surface {
+    background-color: #FFFFFF !important;
+    border: 2px solid #000000 !important;
+    box-shadow: none !important;
+  }
+
+  html.high-contrast button {
+    border: 2px solid currentColor !important;
+  }
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 3px solid #F95518;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.font-heading {
+  font-family: 'Bitter', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Nunito', system-ui, sans-serif;
+}

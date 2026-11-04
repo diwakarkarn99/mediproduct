@@ -1,0 +1,6 @@
+{
+  "name": "MediTrack - Medicine Reminder & Family Care",
+  "description": "Never miss your medicine. Never care alone. Accessible medicine management, reminder engine, and trusted family care for older adults and patients.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
